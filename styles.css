@@ -4,21 +4,63 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-img {
-  width: 50px;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+li {
+  list-style: none;
+  border: 2px solid black;
+  padding: 1em;
+}
+
+.logo {
+  width: 300px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+
+.projects {
+  border: 2px solid black;
+  padding: 2em;
+}
+
+/* Hero */
 
 .hero {
   border: 2px solid black;
   padding: 2em;
+  height: 100vh;
 }
+
+.hero-img {
+  width: 50px;
+}
+
+/*About me */
 
 .about {
   border: 2px solid black;
   padding: 2em;
 }
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.projects {
-  border: 2px solid black;
-  padding: 2em;
+.skill-img {
+  width: 50px;
+}
+
+/* Projects */
+
+.project-img {
+  width: 50px;
 }
