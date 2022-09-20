@@ -1,0 +1,108 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, orange, purple);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+}
+
+/* Navigation */
+
+.main-nav {
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    border: solid black 2px;
+    border-radius: 5px;
+    margin: 10%;
+    align-items: center;
+}
+
+/* Hero section */
+
+.hero-section {
+    border: solid black 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.hero-img {
+    display: block;
+    width: 100px;
+}
+
+
+
+/* About me section */
+
+#about {
+    border: solid black 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.skill-main-container {
+    display: flex;
+    align-items: center;
+}
+
+.skill-inner-container {
+    background-color: red;
+    margin: 2px;
+    align-items: center;
+    display: flex;
+}
+
+.skill-img {
+    margin: 10px;
+    width: 50px;
+}
+
+/* project section */
+
+.project-section {
+    border: solid black 5px;
+    padding: 5px;
+}
+
+.project-container {
+    border: solid black 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.project-image {
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+/* Contact section */
+
+.contact-section {
+    margin: 5px;
+    padding: 5px;
+    border: solid black 5px;
+}
