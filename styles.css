@@ -2,6 +2,17 @@ body {
   background-color: #003844;
   color: #f9f5e3;
   font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+/* Header */
+
+header {
+  width: 100vw;
+}
+
+.logo {
+  width: 300px;
 }
 
 nav {
@@ -10,34 +21,39 @@ nav {
   align-items: center;
 }
 
-li {
-  list-style: none;
-  border: 2px solid black;
-  padding: 1em;
-}
-
-.logo {
-  width: 300px;
-}
-
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
 }
 
+li {
+  list-style: none;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #006c67;
+}
 
-.projects {
-  border: 2px solid black;
-  padding: 2em;
+li:hover {
+  background-color: #00a199;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
 }
 
 /* Hero */
 
 .hero {
-  border: 2px solid black;
+  display: flex;
+  width: 80%;
   padding: 2em;
-  height: 100vh;
+  border-radius: 15px;
+  border: double 10px #ed6a5a;
 }
 
 .hero-img {
@@ -47,9 +63,16 @@ ul {
 /*About me */
 
 .about {
-  border: 2px solid black;
   padding: 2em;
+  height: 80vh;
+  width: 80%;
+  background-color: #00a199;
 }
+
+.skill-item {
+  width: 20%;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +84,20 @@ ul {
 
 /* Projects */
 
+.projects {
+  width: 80%;
+  padding: 2em;
+  background-color: #00a199;
+}
+
 .project-img {
-  width: 50px;
+  width: 200px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #00a199;
+  padding: 1.5em;
+  margin-top: 1.5em;
 }
