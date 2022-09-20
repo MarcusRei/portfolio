@@ -5,10 +5,16 @@ body {
   margin: 0;
 }
 
+h2 {
+  color: #1f0812;
+  font-size: 5em;
+  text-decoration: underline;
+}
+
 /* Header */
 
 header {
-  width: 100vw;
+  padding-left: 1.5em;
 }
 
 .logo {
@@ -50,14 +56,24 @@ li:hover {
 
 .hero {
   display: flex;
-  width: 80%;
+  width: 79%;
   padding: 2em;
   border-radius: 15px;
   border: double 10px #ed6a5a;
 }
 
+.hero > h2 {
+  color: #f9f5e3;
+}
+
 .hero-img {
-  width: 50px;
+  width: 200px;
+}
+
+.img-text-container {
+  display: flex;
+  gap: 1.5em;
+  justify-content: space-between;
 }
 
 /*About me */
@@ -92,6 +108,10 @@ li:hover {
 
 .project-img {
   width: 200px;
+}
+
+.project-item {
+  height: 5em%;
 }
 
 /* Footer */
