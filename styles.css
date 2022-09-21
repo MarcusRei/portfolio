@@ -3,6 +3,10 @@ body {
   color: #f9f5e3;
   font-family: "Raleway", sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 h2 {
@@ -14,11 +18,20 @@ h2 {
 /* Header */
 
 header {
-  padding-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  width: 300px;
+  width: 80%;
 }
 
 nav {
@@ -58,8 +71,16 @@ li:hover {
   display: flex;
   width: 79%;
   padding: 2em;
+  padding-top: 0;
   border-radius: 15px;
   border: double 10px #ed6a5a;
+}
+
+.hero-item > h2 {
+  display: flex;
+  flex-direction: column;
+  color: #ed6a5a;
+  text-decoration: none;
 }
 
 .hero > h2 {
@@ -72,17 +93,20 @@ li:hover {
 
 .img-text-container {
   display: flex;
+  flex-direction: column;
   gap: 1.5em;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 /*About me */
 
 .about {
   padding: 2em;
-  height: 80vh;
+  padding-top: 0;
   width: 80%;
-  background-color: #00a199;
+  background-color: rgba(0, 161, 153, 0.5);
+  border-radius: 15px;
 }
 
 .skill-item {
@@ -92,10 +116,11 @@ li:hover {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .skill-img {
-  width: 50px;
+  width: 4em;
 }
 
 /* Projects */
@@ -103,7 +128,9 @@ li:hover {
 .projects {
   width: 80%;
   padding: 2em;
+  padding-top: 0;
   background-color: #00a199;
+  border-radius: 15px;
 }
 
 .project-img {
@@ -111,7 +138,6 @@ li:hover {
 }
 
 .project-item {
-  height: 5em;
 }
 
 /* Footer */
@@ -120,4 +146,35 @@ footer {
   background-color: #00a199;
   padding: 1.5em;
   margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 1rem;
+  color: #f9f5e3;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-img {
+  width: 1em;
+}
+
+.social-item {
+  width: 33%;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.social-container li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
