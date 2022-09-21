@@ -58,9 +58,10 @@ li {
 
 li:hover {
   background-color: #00a199;
+  cursor: pointer;
 }
 
-.container {
+.main-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -137,7 +138,7 @@ li:hover {
 }
 
 .project-img {
-  width: 200px;
+  width: 20em;
 }
 
 /* Footer */
@@ -163,7 +164,6 @@ footer {
 }
 
 .social-item {
-  width: 30%;
 }
 
 .social-item a {
@@ -183,4 +183,15 @@ footer {
   display: flex;
   align-items: center;
   gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    width: 100vw;
+  }
+
+  .img-text-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
