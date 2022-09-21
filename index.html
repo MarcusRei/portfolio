@@ -4,151 +4,180 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcus Reineck portfolio</title>
+    <title>Marcus Reineck</title>
 
-    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header>
-      <h1 class="main-title">Marcus Reineck</h1>
-      <nav class="main-nav">
-        <section>
-          <button class="nav-btn">About me</button>
-        </section>
-        <section>
-          <button class="nav-btn">Contact</button>
-        </section>
-        <section>
-          <button class="nav-btn">Projects</button>
-        </section>
+      <section class="logo-container">
+        <img
+          class="logo"
+          src="/assets/logo-colored.png"
+          alt="Marcus Reineck logotyp"
+        />
+      </section>
+
+      <nav>
+        <ul>
+          <li>
+            <button type="button">About me</button>
+          </li>
+          <li>
+            <button type="button">Projects</button>
+          </li>
+          <li>
+            <button type="button">Contact</button>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <section id="hero">
-      <h2>Hero Section</h2>
-      <article>
-        <p>Front end developer & 3D artist</p>
-        <img class="hero-img" src="Images/placeholder_square.jpg" />
-      </article>
-    </section>
-
-    <section id="about">
-      <h2>About me section</h2>
-      <article>
-        Jag pluggar just nu webbutveckling och lär mig för tillfället HTML & CSS
-      </article>
-
-      <h2>Skills</h2>
-      <article class="skill-main-container">
-        <ul>
-          <li class="skill-inner-container">
+    <section class="main-container">
+      <section class="hero">
+        <section class="hero-item">
+          <h2>Marcus Reineck</h2>
+          <article class="img-text-container">
             <img
-              class="skill-img"
-              src="Images/placeholder_square.jpg"
-            />Illustrator
-          </li>
-          <li class="skill-inner-container">
-            <img
-              class="skill-img"
-              src="Images/placeholder_square.jpg"
-            />Premiere Pro
-          </li>
-          <li class="skill-inner-container">
-            <img class="skill-img" src="Images/placeholder_square.jpg" />After
-            Effects
-          </li>
-          <li class="skill-inner-container">
-            <img class="skill-img" src="Images/placeholder_square.jpg" />Blender
-          </li>
-          <li class="skill-inner-container">
-            <img class="skill-img" src="Images/placeholder_square.jpg" />Davinci
-            Resolve
-          </li>
-          <li class="skill-inner-container">
-            <img
-              class="skill-img"
-              src="Images/placeholder_square.jpg"
-            />Lightroom
-          </li>
-        </ul>
-      </article>
-    </section>
+              class="hero-img"
+              src="assets/placeholder_square.jpg"
+              alt="The hero image will go here"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates commodi libero repellat. Pariatur reiciendis veniam
+              dolores unde placeat, enim dicta quod ratione minima alias
+              perspiciatis animi eius eveniet iste nam.
+            </p>
+          </article>
+        </section>
+      </section>
 
-    <section class="project-section">
-      <h2>Projects section</h2>
-
-      <article class="project-container">
-        <h3>Project 1</h3>
-        <img class="project-image" src="Images/placeholder_square.jpg" />
+      <section class="about">
+        <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          facilisis nibh sed metus maximus dapibus. Suspendisse potenti. Integer
-          nunc nibh, semper porta commodo in, pretium quis velit. Morbi lacinia
-          libero id nulla finibus, vitae dignissim nisi scelerisque. Praesent
-          eget fringilla ex. Ut congue metus vitae metus rutrum imperdiet. Etiam
-          blandit congue bibendum. Suspendisse sit amet eros at orci mattis
-          gravida sit amet in lacus. Integer gravida ante in massa auctor, vitae
-          rhoncus orci vestibulum. Pellentesque consectetur bibendum nibh a
-          imperdiet.
+          Mitt namn är Marcus Reineck och jag är en Front end developer. Just nu
+          pluggar jag på Medieinstitutet i Stockholm. Utanför webbutveckling
+          sysslar jag gärna med 3D-grafik och fotografi så vill du diskutera
+          kameror eller renderingsmotorer? <strong>Hör av dig till mig!</strong>
         </p>
-      </article>
+        <section class="skill-container">
+          <h3>Skills</h3>
+          <section class="skill-list">
+            <article class="skill-item">
+              <img
+                class="skill-img"
+                src="/assets/placeholder_square.jpg"
+                alt="photoshop logo"
+              />
+              <p>Photoshop</p>
+            </article>
 
-      <article class="project-container">
-        <h3>Project 2</h3>
-        <img class="project-image" src="Images/placeholder_square.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          facilisis nibh sed metus maximus dapibus. Suspendisse potenti. Integer
-          nunc nibh, semper porta commodo in, pretium quis velit. Morbi lacinia
-          libero id nulla finibus, vitae dignissim nisi scelerisque. Praesent
-          eget fringilla ex. Ut congue metus vitae metus rutrum imperdiet. Etiam
-          blandit congue bibendum. Suspendisse sit amet eros at orci mattis
-          gravida sit amet in lacus. Integer gravida ante in massa auctor, vitae
-          rhoncus orci vestibulum. Pellentesque consectetur bibendum nibh a
-          imperdiet.
-        </p>
-      </article>
+            <article class="skill-item">
+              <img
+                class="skill-img"
+                src="/assets/placeholder_square.jpg"
+                alt="illustrator logo"
+              />
+              <p>illustrator</p>
+            </article>
 
-      <article class="project-container">
-        <h3>Project 3</h3>
-        <img class="project-image" src="Images/placeholder_square.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          facilisis nibh sed metus maximus dapibus. Suspendisse potenti. Integer
-          nunc nibh, semper porta commodo in, pretium quis velit. Morbi lacinia
-          libero id nulla finibus, vitae dignissim nisi scelerisque. Praesent
-          eget fringilla ex. Ut congue metus vitae metus rutrum imperdiet. Etiam
-          blandit congue bibendum. Suspendisse sit amet eros at orci mattis
-          gravida sit amet in lacus. Integer gravida ante in massa auctor, vitae
-          rhoncus orci vestibulum. Pellentesque consectetur bibendum nibh a
-          imperdiet.
-        </p>
-      </article>
-    </section>
+            <article class="skill-item">
+              <img
+                class="skill-img"
+                src="/assets/placeholder_square.jpg"
+                alt="Davinci Resolve logo"
+              />
+              <p>Davinci Resolve</p>
+            </article>
 
-    <section class="contact-section">
-      <h2>Contact section</h2>
-      <article>
-        Interested in working with me? Reach out! Email:
-        <strong>marcusreineck@gmail.com</strong>
-      </article>
+            <article class="skill-item">
+              <img
+                class="skill-img"
+                src="/assets/placeholder_square.jpg"
+                alt="Html5 logo"
+              />
+              <p>Html</p>
+            </article>
+
+            <article class="skill-item">
+              <img
+                class="skill-img"
+                src="/assets/placeholder_square.jpg"
+                alt="css3 logo"
+              />
+              <p>CSS</p>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <section class="project-item">
+          <img
+            class="project-img"
+            src="/assets/mockup-project-1.png"
+            alt="3D render of a spaceship traveling through space"
+          />
+          <h3>Rymdskepp placeholder1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            tempore quasi sapiente, ducimus similique harum assumenda hic! Quas
+            omnis expedita veritatis accusantium modi est beatae? Molestias
+            quidem rerum nam voluptatum.
+          </p>
+        </section>
+
+        <section class="project-item">
+          <img
+            class="project-img"
+            src="/assets/mockup-project-2.png"
+            alt="3D render of a house in the sun"
+          />
+          <h3>Hus placeholder2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+            similique reiciendis, adipisci id quasi assumenda ipsa quaerat
+            voluptas saepe debitis, laudantium officia praesentium perspiciatis.
+            Voluptatum facilis nemo hic quam beatae!
+          </p>
+        </section>
+      </section>
     </section>
 
     <footer>
-      <nav class="main-nav">
-        <article>
-          <button>About me</button>
-        </article>
-
-        <article>
-          <button>Contact</button>
-        </article>
-
-        <article>
-          <button>Projects</button>
-        </article>
-      </nav>
+      <h2 class="contact-title">Kontakta mig här!</h2>
+      <ul class="social-container">
+        <li class="social-item">
+          <i class="bi bi-envelope"></i>
+          <a href="gmail.com" target="new">Gmail</a>
+        </li>
+        <li class="social-item">
+          <i class="bi bi-linkedin"></i>
+          <a href="www.linkedin.com/in/marcus-reineck-b881b086" target="new"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="social-item">
+          <i class="bi bi-github"></i>
+          <a href="https://github.com/MarcusRei" target="new">GitHub</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
