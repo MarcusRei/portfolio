@@ -1,6 +1,6 @@
 body {
   background-color: #003844;
-  background-image: url(/Images/Component\ 1.png);
+  background-image: url(/assets/Component1.png);
   background-size: 5em;
   background-repeat: repeat;
   color: #f9f5e3;
@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100vw;
 }
 
@@ -34,7 +35,18 @@ header {
 }
 
 .logo {
-  width: 80%;
+  width: 70%;
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 nav {
@@ -45,20 +57,30 @@ nav {
 
 ul {
   display: flex;
-  justify-content: space-around;
-  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 li {
   list-style: none;
-  padding: 1em;
-  border-radius: 10px;
-  background-color: #006c67;
 }
 
-li:hover {
+button {
+  list-style: none;
+  padding: 1em;
+  border-radius: 10px;
   background-color: #00a199;
+  color: #f9f5e3;
+  border: none;
   cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #03d8ce;
+  color: #1f0812;
 }
 
 .main-container {
@@ -150,17 +172,14 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .contact-title {
-  font-size: 1rem;
-  color: #f9f5e3;
+  font-size: 2rem;
+  color: #ed6a5a;
   text-align: center;
   text-decoration: none;
-}
-
-.social-img {
-  width: 1em;
 }
 
 .social-item {
@@ -169,6 +188,13 @@ footer {
 .social-item a {
   text-decoration: none;
   color: #f9f5e3;
+}
+.social-item:hover {
+  color: #a7a598;
+}
+
+a:hover {
+  color: #a7a598;
 }
 
 .social-container {
