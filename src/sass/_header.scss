@@ -7,6 +7,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0;
+    box-sizing: border-box;
 
     .logo-container {
         display: flex;
@@ -35,28 +36,28 @@ header {
           
 }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1em;
-    padding: 0;
-    width: 80%;
 
-    @include mix.desktop {
-        flex-direction: row;
 
-    }
-}
-
-nav {
+/* nav {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        padding: 0;
+        width: 80%;
     
+        @include mix.desktop {
+            flex-direction: row;
+    
+        }
+    }
       
     .nav-item {
         list-style: none;
@@ -65,7 +66,7 @@ nav {
         width: 100%;
     }
       
-    .nav-btn {
+    .nav-link {
         list-style: none;
         display: flex;
         justify-content: center;
@@ -83,8 +84,8 @@ nav {
         height: 5em;
     }
       
-    .nav-btn:hover {
+    .nav-link:hover {
         background-color: var.$color-secondary-light;
     }
 
-}
+} */
