@@ -1,0 +1,61 @@
+@use "variables" as var;
+@use "mixins" as mix;
+  
+
+h2 {
+    color: var.$color-text;
+    font-size: 5em;
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    width: 79%;
+    padding-top: 0;
+    border-radius: 15px;
+    border: double 10px;
+    border-color: var.$color-primary;
+    background-color: rgba(237, 106, 90, 0.4);
+
+    @include mix.desktop {
+        display: flex;
+      width: 79%;
+      padding: 2em;
+      }
+
+    .hero-img {
+        width: 10em;
+    }
+    
+}
+  
+.img-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+
+    @include mix.desktop {
+        flex-direction: column;
+      align-items: flex-start;
+    }
+}
+  
+.hero-item > h2 {
+    display: flex;
+    font-size: 3em;
+    text-align: center;
+    flex-direction: column;
+    color: var.$color-primary;
+    text-decoration: none;
+
+    @include mix.desktop {
+        font-size: 3em;
+      text-align: left;
+    }
+}
+  
+.hero > h2 {
+    color: var.$color-text-light;
+  }

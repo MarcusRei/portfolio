@@ -1,0 +1,14 @@
+@use "variables" as var;
+  
+.projects {
+    width: 80%;
+    padding: 2em;
+    padding-top: 0;
+    background-color: var.$color-secondary-light-opaque;
+    border-radius: 15px;
+  
+    .project-img {
+    width: 20em;
+    }
+
+}
