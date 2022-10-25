@@ -2,75 +2,92 @@
 @use "mixins" as mix;
 
 .navbar {
-    background-color:var.$color-secondary-light;
-    min-height: 70px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    position: relative;
+  background-color: var.$color-secondary-light;
+  min-height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
 .nav-menu {
+  display: none;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+  margin-right: 2em;
+
+  @include mix.desktop {
     display: flex;
-    justify-content: center;
-    gap: 1em;
-    padding: 0;
-    margin: 0;
-    margin-right: 2em;
+  }
+}
+
+.nav-menu.active {
+  display: flex;
 }
 
 .nav-item {
-    list-style: none;
-    height: 100%;
+  list-style: none;
+  height: 100%;
 }
 
 .nav-link {
-    color: var.$color-text-light;
-    text-decoration: none;
-    transition: 0.7s ease;
+  color: var.$color-text-light;
+  text-decoration: none;
+  transition: 0.7s ease;
 }
 
 .nav-link:hover {
-    background-color: var.$color-secondary-dark;
+  background-color: var.$color-secondary-dark;
 }
 
 .hamburger {
-    background-color: red;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 2em;
+  transition: 0.3s;
+
+  @include mix.desktop {
+    display: none;
+  }
+}
+
+.hamburger.active {
+  background-color: red;
 }
 
 .hamburger-symbol {
-    background-color: var.$color-text-light;
-    width: 40px;
-    height: 6px;
-    display: flex;
-    position: relative;
-    content:"";
+  background-color: var.$color-text-light;
+  width: 40px;
+  height: 4px;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+}
+
+.hamburger-symbol::before,
+.hamburger-symbol::after {
+  background-color: var.$color-text-light;
+  content: "";
+  width: 40px;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  border-radius: 5px;
 }
 
 .hamburger-symbol::before {
-    background-color: var.$color-text-light;
-    width: 40px;
-    height: 6px;
-    display: flex;
-    position: relative;
+  top: 12px;
 }
 
 .hamburger-symbol::after {
-    background-color: var.$color-text-light;
-    width: 40px;
-    height: 6px;
-    display: flex;
-    position: relative;
+  bottom: 12px;
 }
-
-.active {
-
-}
-
