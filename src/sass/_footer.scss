@@ -1,4 +1,5 @@
 @use "variables" as var;
+@use "mixins" as mix;
   
 footer {
     background-color: var.$color-secondary-light;
@@ -26,14 +27,21 @@ footer {
 
     .social-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 3em;
         padding: 0;
         margin: 0;
+
+        @include mix.desktop {
+            flex-direction: row;
+           
+          }
     
         .social-item {
             margin: 0;
+            list-style: none;
         }
     
         .social-item a {

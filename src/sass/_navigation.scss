@@ -2,7 +2,7 @@
 @use "mixins" as mix;
 
 .navbar {
-  background-color: var.$color-secondary-light;
+  //background-color: rgba(255, 255, 255, 0.059);
   min-height: 70px;
   display: flex;
   justify-content: flex-end;
@@ -11,28 +11,58 @@
   padding: 0;
   margin: 0;
   position: relative;
-}
 
-.nav-menu {
-  display: none;
-  justify-content: center;
-  gap: 1em;
-  padding: 0;
-  margin: 0;
-  margin-right: 2em;
-
-  @include mix.desktop {
-    display: flex;
+  .nav-menu {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+    
+  
+    @include mix.desktop {
+      display: flex;
+      margin-right: 3em;
+      padding: 2em;
+    }
   }
-}
-
-.nav-menu.active {
-  display: flex;
+  
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 4.4em;
+    background-color: var.$color-hover;
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+  
+  }
 }
 
 .nav-item {
   list-style: none;
   height: 100%;
+  overflow: hidden;
+
+  @include mix.desktop {
+    padding: 2em;
+  }
+}
+
+.nav-item:hover {
+  background-color: var.$color-hover;
+}
+
+.nav-item.active {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-link {
@@ -41,9 +71,6 @@
   transition: 0.7s ease;
 }
 
-.nav-link:hover {
-  background-color: var.$color-secondary-dark;
-}
 
 .hamburger {
   display: flex;
@@ -52,6 +79,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
+  top: 1em;
   right: 2em;
   transition: 0.3s;
 
@@ -60,10 +88,7 @@
   }
 }
 
-.hamburger.active {
-  background-color: red;
-}
-
+//mitten-streck
 .hamburger-symbol {
   background-color: var.$color-text-light;
   width: 40px;
@@ -71,8 +96,14 @@
   display: flex;
   position: relative;
   border-radius: 5px;
+  transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+.hamburger-symbol.active {
+    background: transparent;
+}
+
+//övre och undre streck
 .hamburger-symbol::before,
 .hamburger-symbol::after {
   background-color: var.$color-text-light;
@@ -82,12 +113,23 @@
   display: flex;
   position: absolute;
   border-radius: 5px;
+  transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .hamburger-symbol::before {
   top: 12px;
 }
 
+.hamburger-symbol.active::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .hamburger-symbol::after {
-  bottom: 12px;
+    bottom: 12px;
+  }
+
+.hamburger-symbol.active::after {
+    transform: rotate(-45deg);
+    bottom: 0;
 }

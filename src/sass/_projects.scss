@@ -6,9 +6,17 @@
     padding-top: 0;
     background-color: var.$color-secondary-light-opaque;
     border-radius: 15px;
-  
-    .project-img {
-    width: 20em;
-    }
 
+    .project-item {
+        padding: 2em;
+
+        .project-img {
+            width: 20em;
+            }
+    }
+  
+    .project-item:hover {
+        background-color: var.$color-hover;
+
+    }
 }
