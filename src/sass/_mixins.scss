@@ -1,3 +1,4 @@
+@use "variables" as var;
 
 //Media Queries
 
@@ -6,3 +7,10 @@
       @content;
     }
   }
+
+@mixin background {
+  background-color: var.$color-secondary-dark;
+    background-image: url(../assets/Component1.png);
+    background-size: 5em;
+    background-repeat: repeat;
+}
