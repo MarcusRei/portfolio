@@ -1,74 +1,47 @@
 @use "variables" as var;
+@use "colors" as col;
 @use "mixins" as mix;
-  
+
 footer {
-    background-color: var.$color-secondary-light;
-    box-sizing: border-box;
-    padding: 1.5em;
-    padding-right: 0;
-    padding-left: 0;
-    margin-top: 1.5em;
-    margin-left: 0;
-    margin-right: 0;
+  background-color: col.$color-primary-accent;
+  box-sizing: border-box;
+  padding: 1.5em;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  color: col.$color-text-light;
+
+  .contact__social-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    width: 100vw;
+    gap: 0.5em;
+    width: 70%;
+    margin: 0;
+    padding: 0;
 
-    .contact-title {
-        font-size: 2rem;
-        color: var.$color-primary;
-        text-shadow: 0px 1px 0px var.$color-text;
-        text-align: center;
-        text-decoration: none;
-        margin: 0;
-        margin-bottom: 1em;
+    .contact__social-item {
+      display: flex;
+      margin: 0;
+      list-style: none;
     }
 
-    .social-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 3em;
-        padding: 0;
-        margin: 0;
-
-        @include mix.desktop {
-            flex-direction: row;
-           
-        }
-    
-        .social-item {
-            margin: 0;
-            list-style: none;
-        }
-    
-        .social-item a {
-            text-decoration: none;
-            font-size: 1.5rem;
-            color: var.$color-text-light;
-            margin: 0;
-        }
-    
-        .social-item:hover {
-            color: #a7a598;
-        }
-    
-        .social-icon {
-            font-size: 1.5rem;
-        }
-          
-        .social-container li {
-            display: flex;
-            align-items: center;
-            gap: 0.5em;
-            margin: 0;
-            list-style: none;
-        }
-    
-        a:hover {
-            color: #a7a598;
-        }
+    .contact__social-item a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: col.$color-text-light;
+      margin: 0;
+      list-style: none;
     }
+
+    .contact__social-icon {
+      font-size: 1.5rem;
+    }
+  }
 }

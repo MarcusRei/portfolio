@@ -1,29 +1,30 @@
 @use "variables" as var;
 @use "mixins" as mix;
+@use "colors" as col;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    color: var.$color-text-light;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-    box-sizing: border-box;
-
-    @include mix.background;
+  font-family: "Raleway", sans-serif;
+  color: col.$color-text-light;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: col.$color-secondary-light;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
 }

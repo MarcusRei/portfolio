@@ -1,5 +1,6 @@
 @use "variables" as var;
 @use "mixins" as mix;
+@use "colors" as col;
   
 header {
     display: flex;

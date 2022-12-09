@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Reineck</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./sass/main.scss" />
+
+    <!-- Typescript -->
+    <script defer src="./ts/main.ts"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="hamburger-symbol"></span>
+          <!-- <span class="hamburger-symbol"></span>
+          <span class="hamburger-symbol"></span> -->
+        </div>
+      </nav>
+
+      <!--       <figure class="logo-container">
+        <img
+          class="logo"
+          src="./assets/logo/logo-colored.png"
+          alt="Marcus Reineck logotyp"
+        />
+      </figure> -->
+    </header>
+
+    <main class="main-container">
+      <section id="hero" class="hero">
+        <h1 class="hero__name">Marcus Reineck</h1>
+        <h3 class="hero__title">Front end developer</h3>
+        <content class="hero__introduction">
+          <p class="hero__introduction-main-text">
+            Jag pluggar på Medieinstitutet i Stockholm. Utanför webbutveckling
+            sysslar jag med 3D-grafik och fotografi så vill du diskutera kameror
+            eller renderingsmotorer?
+          </p>
+          <p class="hero__introduction-CTA">
+            <strong>Hör av dig till mig!</strong>
+          </p>
+        </content>
+      </section>
+
+      <section id="skills" class="skills">
+        <h3 class="skills__title">Skills</h3>
+        <content class="skills__list">
+          <article class="skills__item">
+            <img
+              class="skills__item-img"
+              src="./assets/symbols/colored/photoshop-colored.png"
+              alt="photoshop logo"
+            />
+            <h4 class="skills__item-title">Photoshop</h4>
+          </article>
+
+          <article class="skills__item">
+            <img
+              class="skills__item-img"
+              src="./assets/symbols/colored/illustrator-colored.png"
+              alt="illustrator logo"
+            />
+            <h4 class="skills__item-title">illustrator</h4>
+          </article>
+
+          <article class="skills__item">
+            <img
+              class="skills__item-img"
+              src="./assets/symbols/colored/davinci-colored.png"
+              alt="Davinci Resolve logo"
+            />
+            <h4 class="skills__item-title">Davinci</h4>
+          </article>
+
+          <article class="skills__item">
+            <img
+              class="skills__item-img"
+              src="./assets/symbols/colored/html-5-colored.png"
+              alt="Html5 logo"
+            />
+            <h4 class="skills__item-title">Html</h4>
+          </article>
+
+          <article class="skills__item">
+            <img
+              class="skills__item-img"
+              src="./assets/symbols/colored/css-3-colored.png"
+              alt="css3 logo"
+            />
+            <h4 class="skills__item-title">CSS</h4>
+          </article>
+        </content>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="projects__title">Projects</h2>
+        <article class="projects__item">
+          <div class="projects__item-img-container">
+            <img
+              class="projects__item-img"
+              src="./assets/project-images/mockup-project-1.png"
+              alt="3D render of a spaceship traveling through space"
+            />
+          </div>
+          <h3 class="projects__item-title">Rymdskepp placeholder 1</h3>
+          <p class="projects__item-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+            tempore quasi sapiente, ducimus similique harum assumenda hic! Quas
+            omnis expedita veritatis accusantium modi est beatae? Molestias
+            quidem rerum nam voluptatum.
+          </p>
+        </article>
+
+        <article class="projects__item">
+          <div class="projects__item-img-container">
+            <img
+              class="projects__item-img"
+              src="./assets/project-images/mockup-project-2.png"
+              alt="3D render of a house in the sun"
+            />
+          </div>
+          <h3 class="projects__item-title">Hus placeholder 2</h3>
+          <p class="projects__item-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
+            similique reiciendis, adipisci id quasi assumenda ipsa quaerat
+            voluptas saepe debitis, laudantium officia praesentium perspiciatis.
+            Voluptatum facilis nemo hic quam beatae!
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2 class="contact__title">Contact me here!</h2>
+      <ul class="contact__social-container">
+        <li class="contact__social-item">
+          <a href="" target="new">
+            <i class="bi bi-envelope contact__social-icon"></i>
+            Gmail</a
+          >
+        </li>
+        <li class="contact__social-item">
+          <a href="" target="new">
+            <i class="bi bi-linkedin contact__social-icon"></i>
+            LinkedIn</a
+          >
+        </li>
+        <li class="contact__social-item">
+          <a href="" target="new">
+            <i class="bi bi-github contact__social-icon"></i>
+            GitHub</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

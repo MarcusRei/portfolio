@@ -2,9 +2,10 @@
 @use "header";
 @use "logo";
 @use "hero";
-@use "about";
+@use "skills";
 @use "projects";
 @use "footer";
 @use "navigation";
 @use "variables" as var;
 @use "mixins" as mix;
+@use "colors" as col;
